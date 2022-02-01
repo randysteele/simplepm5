@@ -1,0 +1,11 @@
+<%= link_to 'Back', projects_path, class: 'btn btn-secondary' %>
+<div class="card">
+  <div class="card-body">
+    <h2 class="card-title mb-4">
+     <span>New Project</span>
+      <%= link_to 'New Project', new_project_path, class: 'btn btn-primary' %>
+    </h2>
+
+
+<%= render 'form', project: @project %>
+

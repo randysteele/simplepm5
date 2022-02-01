@@ -1,0 +1,34 @@
+body {
+    background-color: lightcyan;
+}
+.project-card {
+    transition: background-color 0.5s ease;
+    &:hover {
+        background-color: #7fbeee;
+    }
+}
+
+#tasks-list {
+    list-style: none;
+    padding-left: 0;
+    li {
+        cursor: grab; 
+    }
+}
+
+.task-status {
+   .grip {
+       font-size: 1.1rem;
+   }
+}
+
+.card-body{
+    &:active {
+        cursor:grabbing;
+    }
+&:single-button {
+    cursor:grabbing;
+
+
+}
+}

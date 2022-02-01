@@ -1,0 +1,46 @@
+body {
+    background-color: lightcyan;
+}
+.project-card {
+    transition: background-color 0.5s ease;
+    &:hover {
+        background-color: #7fbeee;
+    }
+}
+
+#tasks-list {
+    list-style: none;
+    padding-left: 0;
+    li {
+        cursor: grab; 
+        &:hover{
+            background-color: dodgerblue;
+        }
+    }
+}
+
+.task-status {
+   .grip {
+       font-size: 1.1rem;
+   }
+}
+
+.card-body{
+    background-color: white;
+        cursor: move;
+        cursor: grab;
+        cursor: -moz-grab;
+        cursor: -webkit-grab;
+        .thumbnails-list{
+            cursor: pointer;
+    }
+}
+
+.card-body:active{
+    cursor: grabbing;
+        cursor: -moz-grabbing;
+        cursor: -webkit-grabbing;
+        &:active {
+        background-color: blue
+}
+}
