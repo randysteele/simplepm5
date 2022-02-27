@@ -4,6 +4,10 @@
       <span>Projects</span>
       <%= link_to 'New Project', new_project_path, class: 'btn btn-primary' %>
     </h2>
-    <%= render ProjectOverviewComponent.with_collection(@projects) %>
+
+    <% @projects.each do |project| %>
+    <%= renderProjectOverviewComponent.with_collection(@projects) %>
+
+    <% end %>
   </div>
 </div>

@@ -8,12 +8,10 @@ class TaskComponent < ViewComponent::Base
     def initialize(task:)
       @task = task
     end
-
-    def render? 
+  
+    def render?
       persisted?
     end
-    
-  
   
     def color_class
       case status
