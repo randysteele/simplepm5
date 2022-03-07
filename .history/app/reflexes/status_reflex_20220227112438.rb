@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class StatusReflex < ApplicationReflex
-include ApplicationHelper
+  include ApplicationHelper
 
   def change
     task = Task.find(element.dataset[:id])

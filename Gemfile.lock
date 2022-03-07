@@ -161,7 +161,7 @@ GEM
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    redis (4.5.1)
+    redis (4.6.0)
     regexp_parser (2.2.0)
     responders (3.0.1)
       actionpack (>= 5.0)
@@ -191,12 +191,11 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    stimulus_reflex (3.4.1)
-      cable_ready (>= 4.5)
+    stimulus_reflex (3.3.0.pre2)
+      cable_ready (>= 4.1.2)
       nokogiri
       rack
       rails (>= 5.2)
-      redis
     thor (1.2.1)
     thread-local (1.1.0)
     tilt (2.0.10)
@@ -246,10 +245,11 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.4)
+  redis (~> 4.0)
   sass-rails (>= 6)
   selenium-webdriver
   spring
-  stimulus_reflex (~> 3.2)
+  stimulus_reflex (= 3.3.0.pre2)
   turbolinks (~> 5)
   tzinfo-data
   view_component

@@ -25,3 +25,5 @@ document.addEventListener('turbolinks:load', () => {
 })
 StimulusReflex.initialize(application, { consumer, controller, isolate: true })
 StimulusReflex.debug = process.env.RAILS_ENV === 'development'
+
+import "controllers"
